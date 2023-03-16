@@ -8,4 +8,4 @@ class Student(models.Model):
     standard = models.IntegerField()
 
     def __str__(self):
-        return self.first_name + ' '+self.last_name
+        return self.first_name + ' '+self.second_name
