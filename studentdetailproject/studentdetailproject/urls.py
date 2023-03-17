@@ -19,5 +19,7 @@ from registry import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', admin.site.urls),
+    path('', views.home,name='home'),
+    path('delete/<int:pk>/', views.delete_data,name='delete_data'),
+    path('update/<int:pk>/', views.update_data,name='update_data'),
 ]
